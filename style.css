@@ -1,0 +1,386 @@
+/* Global */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color:  #F2F2F2;;
+}
+
+.container{
+    max-width: 1060px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.toggle-nav{
+    background: transparent;
+    color:black;
+    border: 0;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    display: none;
+    top: 5;
+    left: 25px;
+}
+
+/* Header */
+.header {
+   margin-top: 25px;
+   margin-bottom: 15px;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-nav-div{
+    display: flex;
+    align-items: center;
+}
+.logo {
+    margin-right: 56px;
+}
+.img-logo {
+}
+.site-nav {
+    
+}
+.site-nav-list {
+    display: flex;
+}
+.site-nav-item {
+  margin-right: 32px;
+}
+.site-nav-link {
+    text-align: center;
+    color: 
+    #69707D;
+    transition: 0.5s;
+}
+
+.site-nav-link:hover{
+    opacity: 0.8;
+}
+
+.site-nav-link:active{
+    opacity: 0.6;
+}
+
+.header-img-div {
+    
+}
+.snape {
+    text-align: center;
+    margin-right: 46px;
+    align-items: center;
+}
+.odam-img {
+}
+.hr{
+    color: #E4E9F2;
+    margin-bottom: 50px;
+    width: 1000px;
+}
+
+/* Main */
+/* Four img div */
+.four-img{
+transition: 0.5s;
+}
+
+.four-img:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+
+.four-img:active{
+    opacity: 0.6;
+    transform: scale(0.9);
+}
+
+
+.main-section {
+ 
+}
+
+.main-container {
+    display: flex;
+}
+.img-box {
+}
+.gloval-img {
+    margin-bottom: 10px;
+}
+.four-img-div {
+    margin-right: 100px;
+}
+.four-img:not(:last-child) {
+    margin-right: 28px;
+}
+/* text box */
+.text-box {
+    margin-top: 50px;
+}
+.site-top-text {
+    margin-bottom: 25px;
+    color:#FF7E1B;
+}
+.site-global-text {
+    color: #1D2026;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 48px;
+    margin-bottom: 32px;
+}
+.site-text {
+    line-height: 26px;
+    font-weight: 400;
+    font-size: 16px;
+    color:#69707D;
+    margin-bottom: 28px;
+}
+
+.action {
+    display: flex;
+  
+}
+.dollar-price {
+    margin-right: 25px;
+    color: #1D2026;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.skidka {
+    color:#FF7E1B;
+    background-color: #FFEEE2;
+    padding: 4px 8px ;
+    border-radius: 8px;
+    
+}
+.dollar-price2 {
+    color: 
+    #B6BCC8;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 32px;
+}
+/* Plus Minus */
+.button-div {
+    display: flex;
+   background-color:#F6F8FD;
+   padding: 18px;
+    /* width: 155px; */
+    border-radius: 10px;
+    margin-right: 16px;
+}
+.minus {
+    border: none;
+    font-size: 23px;
+    margin-right: 45px;
+    color: #FF7E1B;
+       background-color:#F6F8FD;
+}
+.nol {
+    margin-right: 45px;
+    color: #1D2026;
+    font-size: 16px;
+}
+.plus {
+    border: none;
+    font-size: 23px;
+    color: #FF7E1B;
+       background-color:#F6F8FD;
+}
+.add-card{
+    border: none;
+    background-color: #FF7E1B;
+    padding: 23px 76px;
+    color: #FFEEE2;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.add-card:hover{
+    opacity: 0.8;
+}
+
+.add-card:active{
+    opacity: 0.6;
+}
+
+.button-df-div{
+    display: flex;
+}
+
+.site-nav-hidden{
+    display: none;
+}
+
+@media(max-width:900px) {
+    .button-df-div{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .four-img-div{
+        display: none;
+    }
+
+    .main-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .site-nav{
+        display: none;
+    }
+    .header-container{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .header{
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .hr{
+        display:none;
+    }
+
+    .add-card{
+        /* width: 200px; */
+    }
+    .toggle-nav{
+        display: block;
+    }
+
+    .action{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 26px;
+    }
+
+    .df-responsive{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 26px;
+        text-align: center;
+    }
+    .dollar-price2{
+       display: flex;
+       text-decoration: line-through;
+        margin-bottom: 0;
+    }
+
+    .container{
+        padding: 0;
+    }
+    .gloval-img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .add-card{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 106px;
+    }
+
+    .button-div{
+        margin-bottom: 10px;
+        align-items: center;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: auto;
+        padding-left: auto;
+        width: 100%;
+    }
+    .snape{
+        margin-right: 0;
+    }
+
+    .dollar-price{
+        margin-bottom: 0;
+    }
+    
+    .header-container{
+        padding-right: 30px;
+        padding-left: 30px;
+
+    }
+
+    .text-box{
+        padding-right:25px;
+        padding-left:25px;
+    }
+}
+
+
+
+/* Hidden navbar */
+.close-btn{
+    background: transparent;
+    color:
+    #69707D;
+    border: 0;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    /* display: none; */
+    top: 20px;
+    left: 25px;
+}
+.site-nav-hidden {
+    max-width: 200px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+    transform: translateX(-100%);
+}
+
+.site-nav-hidden.shownav.site-nav{
+    transform: translateX(100%);
+    display: block;
+}
+.site-nav-list-hidden {
+    margin-left: 25px;
+    margin-top: 92px;
+}
+.site-nav-item-hidden:not(:last-child) {
+    margin-bottom: 20px;
+}
+.site-nav-link-hidden {
+    font-weight: 700;
+    font-size: 18px;
+    color:
+    #1D2026;
+    transition: 0.5s;
+}
+
+.site-nav-link-hidden:hover{
+    opacity: 0.8;
+}
+
+.site-nav-link-hidden:active{
+    opacity: 0.6;
+}
+
+
